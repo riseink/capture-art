@@ -31,6 +31,14 @@
 	font-family: $font-secondary;
 	text-transform:uppercase;
 	
+    @include respond-to(sm) {
+		font-size:45px;
+	    letter-spacing: -2px;
+	    word-spacing: 6px;
+		line-height:52px;
+		
+    }
+	
 	
 }
 
@@ -346,4 +354,9 @@ transition:         $css-ease;
 	width:300px;
 	overflow:hidden;
 	float:left;
+}
+
+
+.constrain-max-width{
+	max-width:387px;
 }
