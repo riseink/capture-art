@@ -1,0 +1,88 @@
+---
+layout: not-home
+title: New Cap
+---
+<div class="target-body">
+	<div class="anchor-bottom">
+
+				<div class="polygon-wrap--polygon polygon-wrap--HTML">
+				 		 <div class="polygon-fill--polygon top_right_hat"></div>     
+						 <div class="polygon-fill--polygon top_left_hat"></div>      
+						 <div class="polygon-fill--polygon backside_hat"></div>      
+						 <div class="polygon-fill--polygon face_left"></div>         
+						 <div class="polygon-fill--polygon face_right"></div>        
+						 <div class="polygon-fill--polygon neck_left"></div>         
+						 <div class="polygon-fill--polygon neck_right"></div>        
+						 <div class="polygon-fill--polygon collar_left"></div>       
+						 <div class="polygon-fill--polygon shoulder_left"></div>     
+						 <div class="polygon-fill--polygon middle_left_arm"></div>   
+						 <div class="polygon-fill--polygon bottom_left_arm"></div>   
+						 <div class="polygon-fill--polygon left_torso"></div>        
+						 <div class="polygon-fill--polygon middle_torso"></div>      
+						 <div class="polygon-fill--polygon right_torso"></div>       
+						 <div class="polygon-fill--polygon bottom_right_arm"></div>  
+						 <div class="polygon-fill--polygon middle_right_arm"></div>  
+						 <div class="polygon-fill--polygon shoulder_right"></div>    
+						 <div class="polygon-fill--polygon collar_right"></div>      
+						 <div class="polygon-fill--polygon left_upper_thigh"></div>  
+						 <div class="polygon-fill--polygon left_lower_thigh"></div>  
+						 <div class="polygon-fill--polygon left_upper_shin"></div>   
+						 <div class="polygon-fill--polygon left_lower_shin"></div>   
+						 <div class="polygon-fill--polygon right_upper_thigh"></div> 
+						 <div class="polygon-fill--polygon right_lower_thigh"></div> 
+						 <div class="polygon-fill--polygon right_upper_shin"></div>  
+						 <div class="polygon-fill--polygon right_lower_shin"></div>  
+						 <div class="polygon-fill--polygon left_left_foot"></div>    
+						 <div class="polygon-fill--polygon middle_left_foot"></div>  
+						 <div class="polygon-fill--polygon right_left_foot"></div>   
+						 <div class="polygon-fill--polygon left_right_foot"></div>   
+						 <div class="polygon-fill--polygon middle_right_foot"></div> 
+						 <div class="polygon-fill--polygon right_right_foot"></div>  
+						 <div class="polygon-fill--polygon left_upper_hand"></div>   
+						 <div class="polygon-fill--polygon left_pinky_finger"></div> 
+						 <div class="polygon-fill--polygon left_ring_finger"></div>  
+						 <div class="polygon-fill--polygon left_middle_finger"></div>
+						 <div class="polygon-fill--polygon left_index_finger"></div> 
+						 <div class="polygon-fill--polygon left_thumb"></div>        
+						 <div class="polygon-fill--polygon right_thumb"></div>       
+						 <div class="polygon-fill--polygon right_index_finger"></div>
+						 <div class="polygon-fill--polygon right_middle_finger"></div>
+						 <div class="polygon-fill--polygon right_ring_finger"></div> 
+						 <div class="polygon-fill--polygon right_pinky_finger"></div>
+						 <div class="polygon-fill--polygon top_staff"></div>         
+						 <div class="polygon-fill--polygon bottom_staff"></div>      
+
+				</div><!-- polygon-wrap-HTML -->
+	</div>			
+</div>
+<div class="headline-container targetScroll">
+    <h1 class="headline">Nerding Out</h1>
+</div>
+<div class="just-for-fun-container">
+	<div class="wrapper">
+		<div class="just-for-fun-copy">
+			
+			<div class="just-for-fun-content-wrapper">
+			<div class="half">
+				<div class="pad-container">
+				
+			<p>This project got is inspiration from this Amazing Website <a href="http://species-in-pieces.com/" target="_blank">Species in Pieces</a>.  Soon after its release I found an article by <a href="https://www.smashingmagazine.com/2015/06/the-making-of-in-pieces/" target="_blank">Smashing Magazine </a> which provided a pretty detailed how-to guide</p>
+				
+				<p>This inspired me to go back through my old adobe illustrator projects and see what I could make behave like this.  Back in college, I took a Tai-Chi class and drew out the positions for a final project.  A couple years later I found that drawing, and decided to built it out in Adobe Illustrator, I named it Warhol Tai Chi.</p></div></div>
+				<div class="half "><div class="pad-container"><img src="/img/tai_chi.jpg" class="img-responsive" ></div></div>
+				</div><!-- just-for-fun-content-wrapper -->
+				
+				<div class="just-for-fun-content-wrapper">
+					<div class="half">
+					<div class="pad-container">
+				
+				<p> Now came the challenge of transforming this image as into vis-à-vis the style of Species in Pieces. 44 Triangles later I came up with this guy.  With the basic structure conceived, I had to map out each triangle into its own <code>div</code> using <code>&#8209;webkit&#8209;clip&#8209;path</code>.   44 Divs later all the pieces are in play, now its time to animate it. </p>
+				<p>Animations are achieved through <code>@&#8209;webkit&#8209;keyframes</code> and essentially tweening the shape of each div to new coordinates and then back again. Most of the secondary animations were achieved in browser to see what felt right.  Keeping track of all the coordinates easily starts to pile up and become a bit of a chore. If I ever re-visit this project I would make each coordinate a SASS variable <code> &#8209;webkit&#8209;clip&#8209;path: polygon( VAR1 ,VAR2 ,VAR3 );</code></p>
+				<p>But alas hindsight is 20/20. All said and done it was a pretty excellent adventure in cutting edge browser technology</p>
+				</div></div>
+				
+			<div class="half"><div class="pad-container"><img src="/img/trace.png" class="img-responsive" ></div></div>
+		</div><!-- just-for-fun-content-wrapper -->
+		</div>
+	</div>
+</div>

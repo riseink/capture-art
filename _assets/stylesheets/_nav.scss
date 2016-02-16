@@ -1,0 +1,40 @@
+.header{
+height: 65px;
+position: fixed;
+background:url(../img/navbar-repeat.jpg);
+width:100%;
+z-index:9;
+overflow:hidden;
+}
+
+.sticky.header{
+height: 65px;
+position: fixed;
+background:url(../img/navbar-repeat.jpg);
+
+width:100%;
+}
+
+.logo-container{
+  float:left;
+  //margin-left:5%;
+  display:block;
+}
+
+.logo-container img{
+height:100%;
+width:auto;
+}
+
+
+
+.hamburger-container{
+  float:right;
+  margin-right:30px;
+  transition: all .5s!important;
+  
+}
+
+
+
+

@@ -1,0 +1,373 @@
+body{
+	background: $color-gray;
+}
+
+.bg-inflate{
+    -webkit-transform:scale(1.1); /* Safari and Chrome */
+    -moz-transform:scale(1.1); /* Firefox */
+    -ms-transform:scale(1.1); /* IE 9 */
+    -o-transform:scale(1.1); /* Opera */
+     transform:scale(1.1);
+     -webkit-transition: all .75s ease-out;
+       -moz-transition: all .75s ease-out;
+       -o-transition: all .75s ease-out;
+       transition: all .75s ease-out;
+       
+}
+
+.target-body{
+   padding-top:20%;
+   background:url(http://media.giphy.com/media/xeWd5LK7D8Rws/giphy.gif);
+   width:100%;
+   height:80vh;
+    //background:url(http://media.giphy.com/media/pDcJDXXIBukve/giphy.gif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position:relative;
+	
+}
+
+
+.hero-container{
+	//background-blend-mode: multiply;
+	background:url(../img/IMG_1253-opt.jpg);
+	background-attachment: fixed;
+	height:auto;
+	width: 100%;
+	padding:1px;
+	background-size: cover;
+	position:relative;
+	height:80vh;
+	background-position:bottom left;
+	background-repeat:no-repeat;
+	display: inline-block;
+	padding-top:60px;
+	
+    @include respond-to(sm) {
+		height:400px;
+		background-position: 20% 16%;
+		background-size:800px;
+		background-attachment: scroll;
+		
+    }
+	
+
+}
+
+.body-of-work-hero{
+	//background-blend-mode: multiply;
+	background:url(../img/IMG_1230-opt.jpg);
+	
+	background-attachment: fixed;
+	height:auto;
+	width: 100%;
+	padding:1px;
+	background-size: cover;
+	position:relative;
+	height:80vh;
+	background-position:bottom left;
+	background-repeat:no-repeat;
+	display: inline-block;
+	padding-top:60px;
+	
+    @include respond-to(sm) {
+		height:400px;
+	    background-position: 0% 46%;
+	    background-size: 939px;
+		background-attachment: scroll;
+		
+    }
+	
+
+}
+
+
+
+.contact-hero{
+	//background-blend-mode: multiply;
+	background:url(../img/IMG_1240-opt.jpg);
+	background-attachment: fixed;
+	height:auto;
+	width: 100%;
+	padding:1px;
+	background-size: cover;
+	position:relative;
+	height:80vh;
+	background-position:bottom left;
+	background-repeat:no-repeat;
+	display: inline-block;
+	padding-top:60px;
+	
+    @include respond-to(sm) {
+		height:400px;
+		background-position: 20% 16%;
+		background-size:800px;
+		background-attachment: scroll;
+		
+    }
+	
+
+}
+
+
+.animation-hero{
+	//background-blend-mode: multiply;
+	background:url(../img/IMG_1226-opt.jpg);
+	background-attachment: fixed;
+	height:auto;
+	width: 100%;
+	padding:1px;
+	background-size: cover;
+	position:relative;
+	height:80vh;
+	background-position:bottom left;
+	background-repeat:no-repeat;
+	display: inline-block;
+	padding-top:60px;
+	
+    @include respond-to(sm) {
+		height:400px;
+		background-position: 20% 16%;
+		background-size:800px;
+		background-attachment: scroll;
+		
+    }
+	
+
+}
+
+
+.icon-jquery{
+  background:url(../img/jquery-logo.png);
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+
+}
+
+.icon-jquery:hover{
+  background:url(../img/jquery-logo-hover.png);
+background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+}
+
+.icon-php{
+  background:url(../img/php-logo.png);
+    background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+
+}
+
+.icon-php:hover{
+  background:url(../img/php-logo-hover.png);
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+}
+
+.icon-mysql{
+  background:url(../img/mysql-logo.png);
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+
+}
+
+.icon-mysql:hover{
+  background:url(../img/mysql-logo-hover.png);
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+}
+
+.icon-jeet{
+  background:url(../img/jeet-logo.png);
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+
+}
+
+.icon-jeet:hover{
+  background:url(../img/jeet-logo-hover.png);
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+}
+
+.icon-backbone{
+  background:url(../img/backbone-logo.png);
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+
+}
+
+.icon-backbone:hover{
+  background:url(../img/backbone-logo-hover.png);
+background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+}
+
+.icon-jekyll{
+  background:url(../img/jekyll-logo.png);
+    background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+
+}
+
+.icon-jekyll:hover{
+  background:url(../img/jekyll-logo-hover.png);
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+}
+
+.icon-wordpress{
+  background:url(../img/wordpress-logo.png);
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+
+}
+
+.icon-wordpress:hover{
+  background:url(../img/wordpress-logo-hover.png);
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+}
+
+.icon-rails{
+  background:url(../img/rails-logo.png);
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+
+}
+
+.icon-rails:hover{
+  background:url(../img/rails-logo-hover.png);
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+}
+
+
+.scc-BG{
+    background:url(../img/SCC-BG.jpg);
+//    background-blend-mode: darken;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	@include respond-to(xs) {
+		background-position: 0% 100% !important;
+    }
+}
+
+
+.yalla-BG{
+    background:url(../img/yalla-BG.jpg);
+//    background-blend-mode: darken;
+	background-size: cover;
+    background-position: center -15px;
+	background-repeat: no-repeat;
+	@include respond-to(xs) {
+		background-position: 30% 100% !important;
+    }
+}
+
+.fusion-BG{
+    background:url(../img/fusion-BG.jpg);
+//    background-blend-mode: darken;
+	background-size: cover;
+    background-position: center -15px;
+	background-repeat: no-repeat;
+    
+	
+	@include respond-to(xs) {
+		background-position: 20% 100% !important;
+    }
+}
+
+.kg-BG{
+    background:url(../img/kg-BG.jpg);
+    //background-blend-mode: multiply;
+	background-size: cover;
+    background-position: center -15px;
+	background-repeat: no-repeat;
+	@include respond-to(xs) {
+	    background-position: 70% 100%!important;
+    }
+}
+
+.nathans-BG{
+    background:url(../img/nathans-BG.jpg);
+    //background-blend-mode: multiply;
+	background-size: cover;
+    background-position: center -15px;
+	background-repeat: no-repeat;
+	
+	@include respond-to(xs) {
+	    background-position: 70% 100% !important;
+    }
+
+}
+
+.pork-BG{
+    background:url(../img/pork-BG.jpg);
+    //background-blend-mode: multiply;
+	background-size: cover;
+    background-position: center;
+	background-repeat: no-repeat;
+	
+	@include respond-to(xs) {
+	    background-position: 40% 100% !important;
+    }
+
+}
+
+.nathans-BG{
+    background:url(../img/nathans-BG.jpg);
+    //background-blend-mode: multiply;
+	background-size: cover;
+    background-position: center -15px;
+	background-repeat: no-repeat;
+	
+	@include respond-to(xs) {
+	    background-position: 70% 100%!important;
+    }
+
+}
+
+.winona-BG{
+    background:url(../img/winona-BG.jpg);
+    //background-blend-mode: multiply;
+	background-size: cover;
+    background-position: center ;
+	background-repeat: no-repeat;
+	@include respond-to(xs) {
+	    background-position: 54% 100% !important;
+    }
+
+}
+
+
+
+
+.garden-BG{
+    background:url(../img/gardeneers-BG.jpg);
+    //background-blend-mode: multiply;
+	background-size: cover;
+    background-position: center -15px;
+	background-repeat: no-repeat;
+	
+	@include respond-to(xs) {
+	    background-position: 50% 100%!important;
+    }
+
+}

@@ -1,0 +1,51 @@
+@mixin copy{
+    color:$color-light-gray;
+    transition:all .5s;
+	font-family:$font-light;
+
+	
+	a {
+	    color:$color-1;
+		font-size:20px;
+		text-decoration:none;
+		
+	}
+	
+	a:hover {
+		text-decoration:underline;
+	}
+	
+	h1{
+	 	font-family:$font-primary;
+		
+	}
+	
+	h3{
+		
+		font-family:$font-light;
+		text-transform:uppercase;
+	    color:$color-light-gray;
+		
+		
+		strong{
+		    color:$color-3;
+			
+			
+		}
+		
+		
+	}
+	
+	p{
+		margin:20px 0;
+		font-size:20px;
+		
+		strong{
+		    color:$color-3;
+			text-transform:uppercase;
+			
+			
+		}
+		
+	}
+}

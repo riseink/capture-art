@@ -1,0 +1,63 @@
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "xs" {
+    @media (max-width: 500px) {
+      @content;
+    }
+  }
+  
+  @else if $breakpoint == "sm" {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  
+ 
+  @else if $breakpoint == "md" {
+    @media (max-width: 1050px) {
+      @content;
+    }
+  }
+ 
+  @else if $breakpoint == "lg" {
+    @media (max-width: 1170px) {
+      @content;
+    }
+  }
+}
+
+//http://paletton.com/#uid=33m0u0koz++cN+Mj7+Yuo+WMFZB
+
+//$color-1: #FF9F3B;
+//$color-2: #FFC73B;
+//$color-3: #FF593B;
+
+//http://paletton.com/#uid=33m0u0koz++cN+Mj7+Yuo+WMFZB
+$menu-break: 320px;
+$menu-width: 300px;
+$menu-height: 60px;
+
+
+$color-1: #95edff;
+$color-1b:lighten($color-1, 10%);
+$color-1c:darken($color-1, 40%);
+
+$color-2: #FF4E3B;
+$color-3: #FFC23B;
+$color-gray: #25292b;
+$color-gray-light:lighten($color-gray, 10%);
+$color-gray-dark:darken($color-gray, 5%);
+
+$color-light-gray: #d2d2d2;
+
+
+$font-primary: 'Oxygen', sans-serif;
+$font-secondary: 'Lato', sans-serif;
+
+//$font-secondary: 'Titillium Web', sans-serif;
+$font-copy: 'Open Sans', sans-serif;
+$font-light: 'HelveticaNeue-UltraLight';
+
+$css-ease:  all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+$css-ease_position_left:  left 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+$css-ease_position_right:  right 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+

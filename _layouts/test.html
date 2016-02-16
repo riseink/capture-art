@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		{% include ascii.html %} 
+		{% include favicon.html %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+		{% include fonts.html %} 
+		
+        <meta name="viewport" content="width=device-width">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+		
+        {% stylesheet main %}
+        {% javascript application %}
+
+    </head>
+    <body>
+		<a class="offset_anchor" id="page_top"></a>
+		
+		<div id="o-wrapper" class="o-wrapper">
+		<div class="header">
+			<div class="wrapper">
+				<!-- <div class="logo-container targetScroll">
+					<a href="#page_top"><img src="/img/navbar-logo-test.png" class="noSaturation"></a>
+				</div> -->
+				<!-- <div class="hamburger-container targetScroll" id="c-button--slide-right">
+
+					<img src="/img/hamburger.png" class="noSaturation">
+				</div> -->
+			</div>
+		</div><!-- header -->
+
+        <div class="site">
+
+
+
+          {{ content }}
+		  
+            </div><!-- site -->
+          </div><!-- o-wrapper -->
+
+		  {% include footer.html %} 
+		  
+		  
+		<nav id="c-menu--slide-right" class="c-menu c-menu--push-right">
+		  <button class="c-menu__close">
+			  CLOSE MENU
+			  <!-- <div class="hamburger-close"><img src="/img/hamburger-close.png"></div> -->
+</button>
+		  <ul class="c-menu__items">
+		    <li class="c-menu__item"><a href="#tech_stack" class="c-menu__link">LINK A</a></li>
+		    <li class="c-menu__item"><a href="#body_of_work" class="c-menu__link">LINK B</a></li>
+		    <li class="c-menu__item"><a href="#" class="c-menu__link">LINK C</a></li>
+		    <li class="c-menu__item"><a href="#" class="c-menu__link">LINK D</a></li>
+		    <li class="c-menu__item"><a href="#" class="c-menu__link">LINK E</a></li>
+		  </ul>
+		</nav><!-- /c-menu push-right -->
+		<div id="c-mask" class="c-mask"></div><!-- /c-mask -->
+
+    </body>
+</html>
