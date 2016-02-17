@@ -93,6 +93,7 @@
 	margin:auto;
 	display:flex;
     @include copy;
+	font-size:24px;
 	
     @include respond-to(sm) {
 		display:inline-block;

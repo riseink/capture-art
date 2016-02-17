@@ -52,5 +52,32 @@ http://mailchimp.com/resources/guides/working-with-automation/html/
 When a subscriber signs up for your list: Welcome new subscribers with a single email—or a series—to help them get to know your company. Tell them what they can expect in future newsletters, send a special coupon, or give them tips on how they can take advantage of everything you have to offer.
 
 
-Footer that folds up "ErrMaGerrd!!! You Have Reached the End of my Page, and possibly the Internet!"
+Footer that folds up
 https://davidwalsh.name/folding-animation
+
+
+ABOUT
+
+Background Image (SCC Rooftop)
+http://www.gettyimages.com/detail/photo/workplace-in-the-night-city-royalty-free-image/530841833
+
+	<p> I graduated from Emory University in 2004, with a BA in Psychology.  I always associated psychology as a natru. In 2005 I was hired by <a href='http://www.pindotmedia.com' target="_blank"> PinDotMedia </a> as a Art Director, and stayed with the agency for 7 years.  Working primarily in print, it became  evident that  within our industry there was an ever increasing trend towards internet based marketing strategies. As a result of which, I decided it was time to "Sink or Swim" and study Web Design in Chicago at <a href='http://www.starterleague.com/' target="_blank"> The Starter League </a> located at <a href='http://www.1871.com/' target="_blank"> 1871 </a>.  Currently I am a developer at Shafer Condon Carter where I work with the following clients: Ad Council, Campbells, Cubs, ConAgra Foods, First Midwest Bank, Fusion Academy, Giordanos, Ideal Industries, Kerrygold, Pork Foodservice, Proctor & Gamble, Rich's Foodservice, Solo, Unlce Dougies, & Terlato Wines. </p>
+	
+								<p style="margin-top:10px"><a href="Seth-Epstein-Resume.pdf" target="blank"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Adobe_PDF_Icon.svg/200px-Adobe_PDF_Icon.svg.png" width="25px"/></a> View My Résumé</p>
+</div>
+
+
+2005 - 2012
+Art Director
+PinDotMedia - Atlanta, GA 
+<a href='http://www.pindotmedia.com' target="_blank"> www.pindotmedia.com </a>
+Notable Clients </em> - <a href='http://www.midas.com' target="_blank"> Midas</a>,  <a href='http://www.remax.com' target="_blank"> RE/MAX, </a>  <a href='http://www.championwindow.com' target="_blank"> Champion</a>,  <a href='http://www.kroger.com' target="_blank"> Kroger</a> & <a href='http://www.storage-mart.com' target="_blank"> StorageMart </a>.  </p> 
+<p>Responsible for the creation and oversight of print and interactive design for 35 clients advertising in markets throughout the United States and Canada.</p>
+
+Hobbies 
+
+<h4 style="float:left; line-height:100%;">Photography  /<br>Illustration</h4>
+
+<p class="clear-both"><strong>Photography</strong> - Having worked in the graphic design industry for so long, OCD image manipulation using Photoshop, became much of a pastime <em> {insert sarcasm} </em>. Eventually I decided that I should be creating photography rather than editing it. So thanks to the Economic Stimulus Act of 2008, I immediately returned the money to the public and bought my first DSL Camera, the Nikon D40. </p>
+
+<p> <strong>Illustration</strong> - My true hobby has always been illustration. In college I sold my first work of art <em> "The Ghetto of Athens"</em> &nbsp; to a philosophy professor at Emory University.  It was that masterpiece that ultimately set me on my path to being a Graphic Designer, Art Director, and now a Web Developer.</p>
