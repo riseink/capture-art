@@ -4,6 +4,7 @@
 //= require vendor/demo.min
 //= require vendor/menu
 //= require vendor/jquery.magnific-popup.min
+//= require vendor/modernizr-custom
 
 var app = {
 
@@ -122,6 +123,8 @@ var app = {
             }
           }
         });
+		
+		location.hash = '';
     },
 	
 	initializeHorizontalBanners: function(){
@@ -143,23 +146,31 @@ var app = {
 	},
 	
     initalizeExpandingContent: function(){
+
+		
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		 console.log('mobile detected')
+		}
+		
+		else {
+			
 		$(".expanded-content").hide();
 		$(".expanded-content.leave-open").show();
 
         $('.expanding-content-container').find('.target-expanding-content').click(function(){
-			  
+
               $(this).next().slideToggle('fast');
 			  $(".fa-plus-square").removeClass('fa-minus-square');
 			  $(this).find(".fa-plus-square").toggleClass('fa-minus-square');
               $(".expanded-content").not($(this).next()).slideUp('fast');
 
-		      $('html, body').animate({
+		      $('body').animate({
 		          scrollTop: $("a.offset_anchor_about").offset().top
 		      }, 50);
 		  	  
          });
 
-			
+	 	}
 			
 	},
 	
