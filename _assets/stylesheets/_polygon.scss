@@ -665,8 +665,8 @@ background: $color-1c;
 }
 
 @-webkit-keyframes move-bottom_staff{
-  0%   { -webkit-clip-path: polygon( 36.047% 40.216% ,99.336% 43.694% ,100.000% 39.865% ); }
-  50%   {   -webkit-clip-path: polygon( 36.047% 30.216% ,99.336% 43.694% ,100.000% 39.865% );
+  0%   { -webkit-clip-path: polygon( 36.047% 40.716% ,99.336% 43.694% ,100.000% 39.865% ); }
+  50%   {   -webkit-clip-path: polygon( 36.047% 30.816% ,99.336% 43.694% ,100.000% 39.865% );
  }
-  100% { -webkit-clip-path: polygon( 36.047% 40.216% ,99.336% 43.694% ,100.000% 39.865% );}
+  100% { -webkit-clip-path: polygon( 36.047% 40.716% ,99.336% 43.694% ,100.000% 39.865% );}
 }

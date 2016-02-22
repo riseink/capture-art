@@ -34,6 +34,58 @@ only screen and (min-device-pixel-ratio: 1.5){
   }
 }
 
+.three-quarter-copy{
+    @include col(6/8);
+	
+    @include respond-to(md) {
+	    @include col(11/16);
+    }
+	
+	
+    @include respond-to(sm) {
+    	@include span(1/1);
+    }
+}
+
+.quarter-image{
+    @include col(2/8);
+	
+    @include respond-to(md) {
+	    @include col(5/16);
+    }
+	
+	
+    @include respond-to(sm) {
+    	@include span(1/1);
+    }
+}
+
+.just-for-fun-image{
+    @include col(3/8);
+	
+    @include respond-to(md) {
+	    @include col(4/8);
+    }
+	
+	
+    @include respond-to(sm) {
+    	@include span(1/1);
+    }
+}
+
+.just-for-fun-text{
+    @include col(5/8);
+	
+	
+    @include respond-to(md) {
+	    @include col(4/8);
+    }
+    @include respond-to(sm) {
+    	@include span(1/1);
+    }
+
+}
+
 .half {
     @include span(1/2);
 
@@ -149,4 +201,12 @@ height:550px;
 .offset-top-test{
 	width:100%;
 	padding-top:80px;
+}
+
+.fill-column{
+	padding-bottom:10vh;
+	@include respond-to(sm) {
+		padding-bottom:40px;
+
+	}
 }

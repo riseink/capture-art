@@ -15,6 +15,7 @@ var app = {
 		this.animatePageScrolltoAnchor();
         this.initializeHorizontalBanners();
 		this.initalizeMaginificPopup();
+		this.initalizeExpandingContent();
 		this.initializeMap();
         this.initializeScrollingeffects();
         
@@ -139,6 +140,27 @@ var app = {
 		  //console.log(offsetHeight);
 		  
 	     });	
+	},
+	
+    initalizeExpandingContent: function(){
+		$(".expanded-content").hide();
+		$(".expanded-content.leave-open").show();
+
+        $('.expanding-content-container').find('.target-expanding-content').click(function(){
+			  
+              $(this).next().slideToggle('fast');
+			  $(".fa-plus-square").removeClass('fa-minus-square');
+			  $(this).find(".fa-plus-square").toggleClass('fa-minus-square');
+              $(".expanded-content").not($(this).next()).slideUp('fast');
+
+		      $('html, body').animate({
+		          scrollTop: $("a.offset_anchor_about").offset().top
+		      }, 50);
+		  	  
+         });
+
+			
+			
 	},
 	
 	initalizeMaginificPopup: function(){

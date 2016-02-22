@@ -81,6 +81,36 @@ body{
 
 }
 
+.about-hero{
+	//background-blend-mode: multiply;
+	//background:url(../img/city-laptop.jpg);
+	
+	background:url(../img/IMG_1247-opt.jpg);
+	
+	
+	background-attachment: fixed;
+	height:auto;
+	width: 100%;
+	padding:1px;
+	background-size: cover;
+	position:relative;
+	height:80vh;
+	background-position:bottom left;
+	background-repeat:no-repeat;
+	display: inline-block;
+	padding-top:60px;
+	
+    @include respond-to(sm) {
+		height:400px;
+	    background-position: 0% 46%;
+	    background-size: 939px;
+		background-attachment: scroll;
+		
+    }
+	
+
+}
+
 
 
 .contact-hero{

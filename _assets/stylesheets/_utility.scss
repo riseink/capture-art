@@ -1,3 +1,14 @@
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  *zoom: 1;
+}
 .img-responsive{
 	width:100%;
 	height:auto;
@@ -12,6 +23,15 @@
 	
 	@include respond-to(sm) {
 		padding:20px;
+		
+	}
+}
+
+.pad-container-image{
+	padding:40px 40px 0 40px;
+	
+	@include respond-to(sm) {
+		padding:0 20px;
 		
 	}
 }
@@ -75,4 +95,18 @@ a.offset_anchor{
 	position: relative; 
 	top: -70px; 
 	visibility: hidden;
+}
+
+a.offset_anchor_about{
+	visibility: hidden;
+	display: block; 
+	position: relative;
+	top: -70px; 
+	 
+	height:0;
+	width:0;
+}
+
+.display-inline-block{
+	float:left;
 }
