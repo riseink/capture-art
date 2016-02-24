@@ -31,6 +31,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Capture Art - Just For Fun</title>
         <meta name="viewport" content="width=device-width">
+		<meta property="og:url"                content="http://capture-art.us" />
+<meta property="og:type"               content="article" />
+<meta property="og:title"              content="Capture Art" />
+<meta property="og:description"        content="Chicago Based Web Development - Having fun with webkit Polygons" />
+<meta property="og:image"              content="/img/IMG_1230-opt.jpg" /> 
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
@@ -38,11 +43,7 @@
 <!-- FORT AWESOME CDN -->
 <script src="https://use.fonticons.com/42d5154a.js"></script>
 
-<meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
-<meta property="og:type"               content="article" />
-<meta property="og:title"              content="Capture Art" />
-<meta property="og:description"        content="Chicago Based Web Development - Having fun with webkit Polygons" />
-<meta property="og:image"              content="/img/IMG_1230-opt.jpg" />
+
  
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
@@ -136,9 +137,9 @@
 			<div class="just-for-fun-text">
 				<div class="pad-container">
 				
-			<p>This project got is inspiration from this Amazing Website <a href="http://species-in-pieces.com/" target="_blank">Species in Pieces</a>.  Soon after its release I found an article by <a href="https://www.smashingmagazine.com/2015/06/the-making-of-in-pieces/" target="_blank">Smashing Magazine </a> which provided a pretty detailed how-to guide</p>
+			<p>This project got is inspiration from this amazing website <a href="http://species-in-pieces.com/" target="_blank">Species in Pieces</a>.  Soon after its release I found an article by <a href="https://www.smashingmagazine.com/2015/06/the-making-of-in-pieces/" target="_blank">Smashing Magazine </a> which provided a pretty detailed how-to guide</p>
 				
-				<p>This inspired me to go back through my old adobe illustrator projects and see what I could make behave like this.  Back in college, I took a Tai-Chi class and drew out the positions for a final project.  A couple years later I found that drawing, and decided to built it out in Adobe Illustrator, I named it Warhol Tai Chi.</p></div></div>
+				<p>This inspired me to go back through some of my old adobe illustrator projects and see what I could make behave like this.  One thing that caught my eye was a drawing I made in college, when I had taken a Tai chi class and drew out the positions for a final project. When i got into graphic design I revised that drawing and built it out in vector with Adobe Illustrator.</p> </div></div>
 				<div class="just-for-fun-image"><div class="pad-container-image"><img src="/img/tai_chi.jpg" class="img-responsive" ></div></div>
 				</div><!-- just-for-fun-content-wrapper -->
 				
@@ -149,7 +150,7 @@
 					<div class="just-for-fun-text">
 					<div class="pad-container">
 				
-				<p> Now came the challenge of transforming this image as into vis-à-vis the style of Species in Pieces. 44 Triangles later I came up with this guy.  With the basic structure conceived, I had to map out each triangle into its own <code>div</code> using <code>&#8209;webkit&#8209;clip&#8209;path</code>.   44 Divs later all the pieces are in play, now its time to animate it. </p>
+				<p> Now came the challenge of transforming this image as into vis-à-vis the style of Species in Pieces. 44 triangles later I came up with this guy.  With the basic structure conceived, I had to map out each triangle into its own <code>div</code> using <code>&#8209;webkit&#8209;clip&#8209;path</code>.   44 divs later all the pieces are in play, now its time to animate it. </p>
 				<p>Animations are achieved through <code>@&#8209;webkit&#8209;keyframes</code> and essentially tweening the shape of each div to new coordinates and then back again. Most of the secondary animations were achieved in browser to see what felt right.  Keeping track of all the coordinates easily starts to pile up and become a bit of a chore. If I ever re-visit this project I would make each coordinate a SASS variable <code> &#8209;webkit&#8209;clip&#8209;path: polygon( VAR1 ,VAR2 ,VAR3 );</code></p>
 				<p>But alas hindsight is 20/20. All said and done it was a pretty excellent adventure in cutting edge browser technology</p>
 				</div></div>
