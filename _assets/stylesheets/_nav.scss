@@ -17,13 +17,24 @@ width:100%;
 
 .logo-container{
   float:left;
-  //margin-left:5%;
   display:block;
+  width:254px;
+  
+  @include respond-to(xxs) {
+    width:224px;
+  }
 }
 
 .logo-container img{
 height:100%;
 width:auto;
+
+@include respond-to(xxs) {
+	height:65px;
+	width:100%;
+}
+
+
 }
 
 
@@ -32,6 +43,13 @@ width:auto;
   float:right;
   margin-right:30px;
   transition: all .5s!important;
+  z-index:1;
+  
+  
+  @include respond-to(xxs) {
+	  margin-right:20px;
+  }
+
   
 }
 
