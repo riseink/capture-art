@@ -512,10 +512,17 @@ th {
   float: left;
   display: block;
   width: 254px; }
+  @media (max-width: 350px) {
+    .logo-container {
+      width: 224px; } }
 
 .logo-container img {
   height: 100%;
   width: auto; }
+  @media (max-width: 350px) {
+    .logo-container img {
+      height: 65px;
+      width: 100%; } }
 
 .hamburger-container {
   float: right;
@@ -524,7 +531,7 @@ th {
   z-index: 1; }
   @media (max-width: 350px) {
     .hamburger-container {
-      width: 224px; } }
+      margin-right: 20px; } }
 
 .c-menu {
   position: fixed;
@@ -1394,6 +1401,15 @@ body {
   background-repeat: no-repeat; }
   @media (max-width: 500px) {
     .garden-BG {
+      background-position: 50% 100% !important; } }
+
+.UD-BG {
+  background: url(../img/UD-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  @media (max-width: 500px) {
+    .UD-BG {
       background-position: 50% 100% !important; } }
 
 .headline-container {

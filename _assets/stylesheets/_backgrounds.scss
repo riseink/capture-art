@@ -401,3 +401,16 @@ background-repeat:no-repeat;
     }
 
 }
+
+
+.UD-BG{
+    background:url(../img/UD-bg.jpg);
+    //background-blend-mode: multiply;
+	background-size: cover;
+    background-position: center ;
+	background-repeat: no-repeat;
+	@include respond-to(xs) {
+	    background-position: 50% 100% !important;
+    }
+
+}
