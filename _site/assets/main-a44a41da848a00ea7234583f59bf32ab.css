@@ -1556,6 +1556,9 @@ body {
     margin-right: 20px;
     font-size: 40px !important;
     display: inline-block; }
+    @media (max-width: 770px) {
+      .about-copy-container i {
+        font-size: 20px !important; } }
   .about-copy-container h3 {
     font-family: "Oxygen", sans-serif;
     text-align: left;
@@ -1863,10 +1866,13 @@ body {
 .icon-container {
   width: 60px;
   float: left; }
+  @media (max-width: 770px) {
+    .icon-container {
+      width: 40px; } }
 
 .icon-copy-container {
   float: left;
-  width: calc(90% - 60px); }
+  width: calc(90% - 40px); }
 
 .anchor-bottom {
   bottom: 20px;
