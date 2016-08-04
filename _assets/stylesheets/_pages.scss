@@ -273,6 +273,29 @@ background: #25292b;
   
 }
 
+.polygon-fill.fallback{
+  width:40%;
+  height:100%;
+  position:absolute;
+  color:$color-1;
+  //background-blend-mode: luminosity;
+  background:url(../img/textured-BG.jpg);
+  left:0;
+  transition:all .5s ;
+  
+}
+
+.polygon-fill-right.fallback{
+  width:40%;
+  height:100%;
+  position:absolute;
+  color:$color-1;
+  background:url(../img/textured-BG.jpg);
+  left:60%;
+  transition:all .5s ;
+  
+}
+
 .banner-left{
 -webkit-clip-path: polygon(0% 0%,10% 0%, 5% 50%, 10% 100%,0% 100%);
 -webkit-transition: $css-ease;

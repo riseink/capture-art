@@ -43,7 +43,13 @@ var app = {
 			}
 				
 			 else {
-				alert("😃 Thank You for taking the time to checkout my site. 😞 It looks like you are using A browser other than Chrome or Safari, I do some cool stuff here so please switch over to Google Chrome to view properly 😎")}
+				alert("Thanks for checking out my site.  To view it in all its awesomeness, switch to Chrome or Safari.  I strive for cutting edge design, some features have been dumbed down in Firefox and IE :( ");
+				$('.polygon-fill').addClass('fallback');
+				$('.polygon-fill-right').addClass('fallback');
+				$('#map').hide();
+				
+				
+			}
 				
 
 	
