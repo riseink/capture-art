@@ -1741,6 +1741,7 @@ body {
   position: absolute;
   color: #95edff;
   background: url(../img/textured-BG.jpg);
+  right: -1px;
   transition: all 0.5s; }
 
 .polygon-fill.fallback {
