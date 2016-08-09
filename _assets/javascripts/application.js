@@ -43,7 +43,8 @@ var app = {
 			}
 				
 			 else {
-				alert("Thanks for checking out my site.  To view it in all its awesomeness, switch to Chrome or Safari.  I strive for cutting edge design, some features have been dumbed down in Firefox and IE :( ");
+				alert("Thanks for checking out my site. I strive for cutting edge design, some features are experimental and specific only to the -webkit package, thus my CSS fallbacks have been dumbed down in Firefox and IE. FOR BEST VIEWING EXPERINCE SWITCH TO SAFARI OR GOOGLE CHROME.  Cheers.");
+				//Browser Specific Fallbacks
 				$('.polygon-fill').addClass('fallback');
 				$('.polygon-fill-right').addClass('fallback');
 				$('#map').hide();
@@ -155,7 +156,7 @@ var app = {
 
 		
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		 console.log('mobile detected')
+			console.log('mobile detected');
 		}
 		
 		else {
@@ -348,4 +349,5 @@ var app = {
 
 $(document).ready(function(){
     app.initialize();
+	console.log("Like what you see?  Let's get in touch.")
 });
