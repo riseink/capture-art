@@ -529,8 +529,26 @@ var app = {
 	
 	initializeHorizontalBanners: function(){
 	    $('.polygon-wrap').hoverIntent(function() {
+	        var windowWidth = $(window).width();
 			
-			var wrapHeight =  $(this).height();
+          if (windowWidth >  770) {
+			  var wrapHeight =  400;
+			  console.log('if less than 770');
+          	
+          }
+		  
+		  else {
+  			var wrapHeight =  $('.wrapper').width();
+  			var wrapHeight =  wrapHeight * 0.29166666666667;
+			
+			console.log('More than');
+			
+		  }
+			
+
+			
+
+			
 			var contentHeight =  $(this).find(".content-slider").height();
 			var offsetHeight = (wrapHeight-contentHeight) * 0.5
 			
@@ -549,7 +567,7 @@ var app = {
 
 		
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		 console.log('mobile detected')
+			console.log('mobile detected');
 		}
 		
 		else {

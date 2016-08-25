@@ -436,7 +436,8 @@ var app = {
 			}
 				
 			 else {
-				alert("Thanks for checking out my site.  To view it in all its awesomeness, switch to Chrome or Safari.  I strive for cutting edge design, some features have been dumbed down in Firefox and IE :( ");
+				alert("Thanks for checking out my site. I strive for cutting edge design, some features are experimental and specific only to the -webkit package, thus my CSS fallbacks have been dumbed down in Firefox and IE. FOR BEST VIEWING EXPERINCE SWITCH TO SAFARI OR GOOGLE CHROME.  Cheers.");
+				//Browser Specific Fallbacks
 				$('.polygon-fill').addClass('fallback');
 				$('.polygon-fill-right').addClass('fallback');
 				$('#map').hide();
@@ -528,8 +529,26 @@ var app = {
 	
 	initializeHorizontalBanners: function(){
 	    $('.polygon-wrap').hoverIntent(function() {
+	       
+		   var windowWidth = $(window).width();
 			
-			var wrapHeight =  $(this).height();
+          		if (windowWidth <  770) {
+					// Panel Height is static on mobile
+		  			  var wrapHeight =  400;
+          			
+          		}
+		  		
+		  		else {
+					
+					// Panel Height is 29% wrapper width
+					
+  		  			var wrapHeight =  $('.wrapper').width();
+  		  			var wrapHeight =  wrapHeight * 0.29166666666667;
+		  						
+		  		}
+			
+			// Vertically centers Panel copy within the panel
+			
 			var contentHeight =  $(this).find(".content-slider").height();
 			var offsetHeight = (wrapHeight-contentHeight) * 0.5
 			
@@ -539,7 +558,6 @@ var app = {
  			$(this).find(".content-left").toggleClass('hovered');
  			$(this).find(".content-right").toggleClass('hovered');
 		  	$(this).find(".tap-container").toggle();
-		  //console.log(offsetHeight);
 		  
 	     });	
 	},
@@ -548,7 +566,7 @@ var app = {
 
 		
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		 console.log('mobile detected')
+			console.log('mobile detected');
 		}
 		
 		else {

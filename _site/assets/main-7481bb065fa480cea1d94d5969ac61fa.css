@@ -1226,6 +1226,9 @@ body {
       background-size: 800px;
       background-attachment: scroll; } }
 
+.icon {
+  padding: 10px 0; }
+
 .icon-jquery {
   background: url(../img/jquery-logo.png);
   background-repeat: no-repeat;
@@ -1706,6 +1709,7 @@ body {
 
 .polygon-wrap {
   width: 100%;
+  padding-bottom: 29.166666666667%;
   position: relative;
   margin: auto;
   overflow: hidden;
@@ -1844,6 +1848,7 @@ body {
   position: absolute;
   left: -30%;
   top: 0%;
+  display: block;
   -webkit-transition-delay: 0s;
   /* Safari */
   transition-delay: 0s;

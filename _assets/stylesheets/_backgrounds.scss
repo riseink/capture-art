@@ -30,7 +30,7 @@ body{
 
 .hero-container{
 	//background-blend-mode: multiply;
-	background:url(../img/IMG_1253-opt.jpg);
+	background:url(../img/streetart.jpg);
 	background-attachment: fixed;
 	height:auto;
 	width: 100%;
@@ -38,7 +38,7 @@ body{
 	background-size: cover;
 	position:relative;
 	height:80vh;
-	background-position:bottom left;
+	background-position:top left;
 	background-repeat:no-repeat;
 	display: inline-block;
 	padding-top:60px;
@@ -164,6 +164,10 @@ body{
     }
 	
 
+}
+
+.icon {
+	padding:10px 0;
 }
 
 

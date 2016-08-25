@@ -437,6 +437,7 @@ var app = {
 				
 			 else {
 				alert("Thanks for checking out my site. I strive for cutting edge design, some features are experimental and specific only to the -webkit package, thus my CSS fallbacks have been dumbed down in Firefox and IE. FOR BEST VIEWING EXPERINCE SWITCH TO SAFARI OR GOOGLE CHROME.  Cheers.");
+				//Browser Specific Fallbacks
 				$('.polygon-fill').addClass('fallback');
 				$('.polygon-fill-right').addClass('fallback');
 				$('#map').hide();
@@ -529,7 +530,15 @@ var app = {
 	initializeHorizontalBanners: function(){
 	    $('.polygon-wrap').hoverIntent(function() {
 			
-			var wrapHeight =  $(this).height();
+			var wrapHeight =  $('.wrapper').width();
+			var wrapHeight =  wrapHeight * 0.29166666666667;
+			
+	        var windowWidthResize = $(window).width();
+	          if (windowWidthResize >  770) {
+				  var wrapHeight =  400;
+	          	
+	          }
+			
 			var contentHeight =  $(this).find(".content-slider").height();
 			var offsetHeight = (wrapHeight-contentHeight) * 0.5
 			
@@ -548,7 +557,7 @@ var app = {
 
 		
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		 console.log('mobile detected')
+			console.log('mobile detected');
 		}
 		
 		else {

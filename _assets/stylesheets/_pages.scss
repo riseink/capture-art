@@ -43,6 +43,38 @@
 	
 }
 
+.landing-container{
+	
+	height:60%;
+	width:60%;
+	background:rgba(0,0,0,.50);
+	margin:10% 20%;
+	h1{
+		font-size:40px;
+		color:$color-3;
+		width:100%;
+		text-align:center;
+		
+		
+		
+	}
+	
+}
+
+.chevron {
+	i{
+	width:100%;
+	color:$color-1;
+	font-size:40px;
+	text-align:center;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	}
+	
+}
+
 
 .tech-stack-container{
 	width:100%;
@@ -230,6 +262,7 @@ background: #25292b;
 
 .polygon-wrap{
   width:100%;
+  padding-bottom: 29.166666666667%;
   position:relative;
   margin: auto;
   overflow:hidden;
@@ -363,6 +396,7 @@ transition:         $css-ease;
     position:absolute;
 	left:-30%;
 	top:0%;
+	display:block;
 	-webkit-transition-delay: 0s; /* Safari */
     transition-delay: 0s;
 	-webkit-transition: $css-ease_position_left;

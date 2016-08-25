@@ -136,8 +136,26 @@ var app = {
 	
 	initializeHorizontalBanners: function(){
 	    $('.polygon-wrap').hoverIntent(function() {
+	       
+		   var windowWidth = $(window).width();
 			
-			var wrapHeight =  $(this).height();
+          		if (windowWidth <  770) {
+					// Panel Height is static on mobile
+		  			  var wrapHeight =  400;
+          			
+          		}
+		  		
+		  		else {
+					
+					// Panel Height is 29% wrapper width
+					
+  		  			var wrapHeight =  $('.wrapper').width();
+  		  			var wrapHeight =  wrapHeight * 0.29166666666667;
+		  						
+		  		}
+			
+			// Vertically centers Panel copy within the panel
+			
 			var contentHeight =  $(this).find(".content-slider").height();
 			var offsetHeight = (wrapHeight-contentHeight) * 0.5
 			
@@ -147,7 +165,6 @@ var app = {
  			$(this).find(".content-left").toggleClass('hovered');
  			$(this).find(".content-right").toggleClass('hovered');
 		  	$(this).find(".tap-container").toggle();
-		  //console.log(offsetHeight);
 		  
 	     });	
 	},
