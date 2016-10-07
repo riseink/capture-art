@@ -85,7 +85,7 @@ body{
 	//background-blend-mode: multiply;
 	//background:url(../img/city-laptop.jpg);
 	
-	background:url(../img/IMG_1247-opt.jpg);
+	background:url(../img/backlit-opt.jpg);
 	
 	
 	background-attachment: fixed;
@@ -95,7 +95,9 @@ body{
 	background-size: cover;
 	position:relative;
 	height:80vh;
-	background-position:bottom left;
+//	background-position:bottom left;
+	background-position:top center ;
+
 	background-repeat:no-repeat;
 	display: inline-block;
 	padding-top:60px;
