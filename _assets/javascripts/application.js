@@ -11,6 +11,7 @@ var app = {
     initialize: function(){
 		this.checkForChrome();
 		this.checkForAdblock();
+		this.toggleBounce();
         this.hamburgerAnimation();
 		this.initailizeMailchimpForm();
 		this.animatePageScrolltoAnchor();
@@ -66,6 +67,24 @@ var app = {
 			
 		      }
 		
+	},
+	
+	toggleBounce: function(){
+		
+    	var $checkForBounce = $('.scroll-indicator');
+	
+        if ( $checkForBounce.length){
+			
+		    setTimeout(function(){
+		        $(".scroll-indicator").toggleClass("bounce");
+		    }, 1000);
+               
+        }
+		
+		else{
+			return false;
+		}
+	
 	},
 
 
