@@ -13,6 +13,10 @@
 		color:$color-1;
 		font-size:80px;
 	}
+	i.color_bounced{
+	    -webkit-animation:color_bounce 4s infinite ease-out;
+		
+	}
 }
 
 .bounce {
@@ -32,6 +36,20 @@
   90%      { bottom:30px; }
   100%     { bottom:20px;
   }
+}
+
+@-webkit-keyframes color_bounce {
+  0%       { color:$color-1; }
+  10%      {  color:$color-1; }
+  20%      {  color:$color-1; }
+  30%      {  color:$color-1; }
+  40%      {  color:$color-1;}
+  50%      {  color:$color-3;}
+  60%      {  color:$color-1; }
+  70%      {  color:$color-3; }
+  80%      { color:$color-1;}
+  90%      {  color:$color-3; }
+  100%     {  color:$color-1; }
 }
 
 .headline-container{
