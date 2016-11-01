@@ -80,6 +80,7 @@ var app = {
 			
 		    setTimeout(function(){
 		        $(".scroll-indicator").toggleClass("bounce");
+				$('.target_color_bounce').toggleClass("color_bounced");
 		    }, 1000);
                
         }
@@ -164,6 +165,9 @@ var app = {
           		if (windowWidth <  770) {
 					// Panel Height is static on mobile
 		  			  var wrapHeight =  400;
+		  		  	  
+					  $(this).find(".tap-container").toggle();
+					  
           			
           		}
 		  		
@@ -186,7 +190,6 @@ var app = {
  			$(this).find(".banner-right").toggleClass('hovered');
  			$(this).find(".content-left").toggleClass('hovered');
  			$(this).find(".content-right").toggleClass('hovered');
-		  	$(this).find(".tap-container").toggle();
 		  
 	     });	
 	},
