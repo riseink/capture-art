@@ -29,7 +29,8 @@ var app = {
 		    // Firefox 1.0+
 		var isFirefox = typeof InstallTrigger !== 'undefined';
 		    // At least Safari 3+: "[object HTMLElementConstructor]"
-		// var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+			// old safari checker(9.0)
+			// var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0; 
 		var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0 || !isChrome && !isOpera && window.webkitAudioContext !== undefined;
 		
 		
