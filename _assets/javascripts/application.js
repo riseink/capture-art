@@ -65,7 +65,7 @@ var app = {
 	checkForAdblock: function(){
 		if( window.canRunAds === undefined && $('#targetAnimations').length > 0){
 		        // adblocker detected
-			alert(" ❗Yikes, you are about to look at some sweet ads! AD BLOCKER will definitely break this page. Please Turn is off and reload.  Cheers 🍺🍺");
+			alert(" ❗Yikes, you are about to look at some sweet ads! AD BLOCKER will definitely break this page. Please turn it off and reload.  Cheers 🍺🍺");
 
 			
 			

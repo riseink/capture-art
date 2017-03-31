@@ -30,6 +30,12 @@
       @content;
     }
   }
+  
+  @else if $breakpoint == "xl" {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
 }
 
 //http://paletton.com/#uid=33m0u0koz++cN+Mj7+Yuo+WMFZB

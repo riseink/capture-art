@@ -1,3 +1,43 @@
+.intro-copy{
+
+	padding:5%;
+	opacity:.8;
+	
+	h1{
+		color:$color-1;
+		font-family:$font-primary;
+		padding:5vh;
+		background:$color-gray;
+		font-size:3.5vw;
+		
+	}
+	
+	@include respond-to(sm) {
+		padding:5%;
+		
+		h1{
+			padding:5vw;
+			font-size:5.5vw;
+		
+		}
+
+	}
+	
+	@include respond-to(xl) {
+		padding:50px;
+		
+		h1{
+			padding:50px;
+			font-size:40px;
+		
+		}
+
+	}
+	
+
+
+}
+
 .scroll-indicator{
     position: absolute;
     bottom: 20px;
@@ -12,6 +52,11 @@
 	i{
 		color:$color-1;
 		font-size:80px;
+		
+		@include respond-to(sm) {
+			font-size:40px;
+			
+		}
 	}
 	i.color_bounced{
 	    -webkit-animation:color_bounce 4s infinite ease-out;
@@ -115,6 +160,8 @@
 	}
 	
 }
+
+
 
 .chevron {
 	i{

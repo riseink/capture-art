@@ -392,6 +392,19 @@ background-repeat:no-repeat;
 
 }
 
+.SK-BG{
+    background:url(../img/SK-BG.jpg);
+    //background-blend-mode: multiply;
+	background-size: cover;
+    background-position: top center ;
+	background-repeat: no-repeat;
+	@include respond-to(xs) {
+	    background-position: 54% 100% !important;
+    }
+
+}
+
+
 
 
 
