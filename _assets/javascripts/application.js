@@ -34,6 +34,11 @@ var app = {
 		var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0 || !isChrome && !isOpera && window.webkitAudioContext !== undefined;
 		
 		
+		var ua = navigator.userAgent.toLowerCase();
+		var isAndroid = ua.indexOf("android") > -1;
+
+		
+		
 		    // Internet Explorer 6-11
 		var isIE = /*@cc_on!@*/false || !!document.documentMode;
 		    // Edge 20+
@@ -43,7 +48,7 @@ var app = {
 		    // Blink engine detection
 		var isBlink = (isChrome || isOpera) && !!window.CSS;
 		
-			if (isChrome == true || isSafari == true) {
+			if (isChrome == true || isSafari == true || isAndroid == true) {
 				// console.log('safari chrome detected')
 			}
 				
