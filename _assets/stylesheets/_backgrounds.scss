@@ -297,6 +297,26 @@ background-repeat:no-repeat;
   background-position:center;
 }
 
+.soco-BG{
+    background:url(../img/soco-BG.jpg);
+//    background-blend-mode: darken;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	@include respond-to(xs) {
+		background-position: 0% 100% !important;
+    }
+}
+.idealcorp-BG{
+    background:url(../img/ideal-corp-BG.jpg);
+//    background-blend-mode: darken;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	@include respond-to(xs) {
+		background-position: 0% 100% !important;
+    }
+}
 
 .scc-BG{
     background:url(../img/SCC-BG.jpg);
