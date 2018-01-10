@@ -131,6 +131,16 @@
     }
 }
 
+.quarter-tiles{
+    width:25%;
+    float:left;
+	
+    @include respond-to(sm) {
+	    width:50%;
+
+    }
+}
+
 .quarters{
   width:15%;
   margin:0 5%;

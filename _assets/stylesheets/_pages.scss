@@ -212,14 +212,22 @@
 }
 
 .contain-animation-copy{
+	
 	width:80%;
 	margin-left:10%;
+	
+
 }
 
 .animation-copy{
 
 	padding-top:10px;
     @include copy;
+	
+	h3{
+		margin-top:40px;
+		color:$color-3!important;
+	}
 	
 }
 

@@ -219,11 +219,16 @@ var app = {
 			  $(this).find(".fa-plus-square").toggleClass('fa-minus-square');
               $(".expanded-content").not($(this).next()).slideUp('fast');
 
-		      $('body').animate({
-		          scrollTop: $("a.offset_anchor_about").offset().top
-		      }, 50);
+		      // $('body').animate({
+		      //     scrollTop: $("a.offset_anchor_about").offset().top
+		      // }, 50);
 		  	  
          });
+		 
+		 $('.fa-minus-square').click(function(){
+             $(this).removeClass('fa-minus-square');
+			 
+		 });
 
 	 	}
 			
@@ -325,7 +330,7 @@ var app = {
 				styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}] 
 			  });
 			
-			var image = 'img/map-icon.png';
+			var image = 'img/clear-icon.png';
 			  
   		    var marker = new google.maps.Marker({
   		      position: myLatLng,
@@ -362,33 +367,33 @@ var app = {
 	
     initializeScrollingeffects: function(){
 
-	    var timer, el = $('body'),
-	        flag = false;
-	    $(window).scroll(function() {
-	        if (!flag) {
-	            flag = true;
-	            $('.targetScroll').addClass('scrolling');
-	            $('.targetScrollText').addClass('scrolling');
-	            $('.targetScrollImage').addClass('scrollingImage');
-				
-				
-	            $('.header').addClass('sticky');
-	            //$('.logo-container img').addClass('sticky');
-	            $('.hamburger-container').addClass('sticky');
-
-
-	        }
-	        clearTimeout(timer);
-	        timer = setTimeout(function() {
-	            $('.targetScroll').removeClass('scrolling');
-	            $('.targetScrollText').removeClass('scrolling');
-	            $('.targetScrollImage').removeClass('scrollingImage');
-				
-				
-
-	            flag = false;
-	        }, 200);
-	    });
+	    // var timer, el = $('body'),
+	    //     flag = false;
+	    // $(window).scroll(function() {
+	    //     if (!flag) {
+	    //         flag = true;
+	    //         $('.targetScroll').addClass('scrolling');
+	    //         $('.targetScrollText').addClass('scrolling');
+	    //         $('.targetScrollImage').addClass('scrollingImage');
+	    //
+	    //
+	    //         $('.header').addClass('sticky');
+	    //         //$('.logo-container img').addClass('sticky');
+	    //         $('.hamburger-container').addClass('sticky');
+	    //
+	    //
+	    //     }
+	    //     clearTimeout(timer);
+	    //     timer = setTimeout(function() {
+	    //         $('.targetScroll').removeClass('scrolling');
+	    //         $('.targetScrollText').removeClass('scrolling');
+	    //         $('.targetScrollImage').removeClass('scrollingImage');
+	    //
+	    //
+	    //
+	    //         flag = false;
+	    //     }, 200);
+	    // });
 
     },
 
