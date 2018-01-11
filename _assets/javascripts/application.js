@@ -48,18 +48,18 @@ var app = {
 		    // Blink engine detection
 		var isBlink = (isChrome || isOpera) && !!window.CSS;
 		
-			if (isChrome == true || isSafari == true || isAndroid == true) {
+			if (isChrome == true || isSafari == true || isAndroid == true || isFirefox == true) {
 				// console.log('safari chrome detected')
 			}
-				
+
 			 else {
-				alert("Thanks for checking out my site. I strive for cutting edge design, some features are experimental and specific only to the -webkit package, thus my CSS fallbacks have been dumbed down in Firefox and IE. FOR BEST VIEWING EXPERINCE SWITCH TO SAFARI OR GOOGLE CHROME.  Cheers.");
+				alert("Thanks for checking out my site. I strive for cutting edge design, some features are experimental and specific only to the -webkit package, thus my CSS fallbacks have been dumbed down in IE. FOR BEST VIEWING EXPERINCE SWITCH TO GOOGLE CHROME, SAFARI or FIREFOX.  Cheers.");
 				//Browser Specific Fallbacks
 				$('.polygon-fill').addClass('fallback');
 				$('.polygon-fill-right').addClass('fallback');
 				$('#map').hide();
-				
-				
+
+
 			}
 				
 
