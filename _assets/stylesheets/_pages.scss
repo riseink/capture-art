@@ -664,3 +664,38 @@ transition:         $css-ease;
 	
 	
 }
+
+.tech-stack-items{
+	
+    transition:all .5s;
+	
+	a {
+		text-decoration:none;
+		margin-bottom:40px;
+		font-family:$font-light;
+		
+		
+		img{
+			filter: grayscale(100%)brightness(300%);
+		}
+		
+		p{
+			width:100%;
+			text-align:center;
+			height:50px;
+			color:#fff;
+		}
+	}
+	
+	a:hover{
+		
+		img{
+			filter: grayscale(0%)brightness(100%);
+		}
+		
+		p{
+
+			color:$color-3;
+		}
+	} 
+}

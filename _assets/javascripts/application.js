@@ -205,30 +205,38 @@ var app = {
 		
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			console.log('mobile detected');
+			$('.icon-container').find(".fa").removeClass('fa-minus-square');
+			$('.icon-container').find(".fa").addClass('fa-plus-square');
 		}
 		
 		else {
 			
 		$(".expanded-content").hide();
 		$(".expanded-content.leave-open").show();
-
+		
+		$('.icon-container').on("click",".fa-plus-square",function(){
+		  $(this).removeClass('fa-plus-square');
+		  $(this).addClass('fa-minus-square');
+	  	});
+		
+		$('.icon-container').on("click",".fa-minus-square",function(){
+		  $(this).addClass('fa-plus-square');
+		  $(this).removeClass('fa-minus-square');
+		
+		});
+		
+		
+		
         $('.expanding-content-container').find('.target-expanding-content').click(function(){
 
               $(this).next().slideToggle('fast');
-			  $(".fa-plus-square").removeClass('fa-minus-square');
-			  $(this).find(".fa-plus-square").toggleClass('fa-minus-square');
               $(".expanded-content").not($(this).next()).slideUp('fast');
 
-		      // $('body').animate({
-		      //     scrollTop: $("a.offset_anchor_about").offset().top
-		      // }, 50);
+		      $('body').animate({
+		          scrollTop: $("a.offset_anchor_about").offset().top
+		      }, 50);
 		  	  
          });
-		 
-		 $('.fa-minus-square').click(function(){
-             $(this).removeClass('fa-minus-square');
-			 
-		 });
 
 	 	}
 			
