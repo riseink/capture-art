@@ -12,23 +12,28 @@
 		{% include fonts.html %} 
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-		
-        {% stylesheet main %}
-        {% javascript application %}
+				<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+				<script type="text/javascript" src="/assets/javascripts/vendor/jquery.js"></script>
+				<script type="text/javascript" src="/assets/javascripts/vendor/hover_intent.js"></script>
+				<script type="text/javascript" src="/assets/javascripts/vendor/jquery.parallax-scroll.js"></script>
+				<script type="text/javascript" src="/assets/javascripts/vendor/demo.min.js"></script>
+				<script type="text/javascript" src="/assets/javascripts/vendor/menu.js"></script>
+				<script type="text/javascript" src="/assets/javascripts/vendor/jquery.magnific-popup.min.js"></script>
+
+				<script type="text/javascript" src="/assets/javascripts/application.js"></script>
 
     </head>
     <body>
-		<a class="offset_anchor" id="page_top"></a>
 		
 		<div id="o-wrapper" class="o-wrapper">
 		<div class="header targetScrollImage">
 			<div class="wrapper">
 				<div class=" logo-container bg-primary">
-					<a href="/#page_top"><img src="/img/navbar-logo.png" class="img-responsive"></a>
+					<a href="/"><img src="/assets/img/navbar-logo.png" class="img-responsive"></a>
 				</div>
 				<div class="hamburger-container bg-primary" id="c-button--slide-right">
 					
-					<img src="/img/hamburger.png" >
+					<img src="/assets/img/hamburger.png" >
 				</div>
 			</div>
 		</div><!-- header -->
@@ -48,7 +53,7 @@
 		<nav id="c-menu--slide-right" class="c-menu c-menu--push-right">
 		  <button class="c-menu__close">
 			  CLOSE MENU
-			  <!-- <div class="hamburger-close"><img src="/img/hamburger-close.png"></div> -->
+			  <!-- <div class="hamburger-close"><img src="/assets/img/hamburger-close.png"></div> -->
 </button>
 		  <ul class="c-menu__items">
 			  {% include nav.html %} 

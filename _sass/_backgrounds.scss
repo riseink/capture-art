@@ -1,0 +1,431 @@
+body{
+	background: $color-gray;
+}
+
+
+.absolute-wrapper{
+	position:relative;
+	height:100vh;
+	}
+	.flex-reveal{
+		width:100%;
+		height:1px;
+		bottom:-1px;
+		position: absolute;
+		display:flex;
+	
+	
+	}
+	
+	.chevron-bounce{
+		width:20vh;
+		position:absolute;
+		left:calc(50vw - 10vh);
+		bottom:0;
+		
+		
+		svg{
+			fill:#fff;
+			width:100%;
+		}
+	}
+	
+	
+	.flex-panel{
+		display:flex;
+		flex:1;
+		background:#fff;
+		height:20vh;
+		border:1px solid white;
+				
+	 
+	}
+	.shrink{
+		height:0vh!important;
+	}
+	
+	.scroll-test{
+		width:100%;
+		height:100vh;
+		background:white;
+		position: relative;
+		color:blue;
+		font-size: 5vw;
+		text-align:center;
+		transition: all 2s ease-in;
+		transform:translateY(-20vh);
+	}
+	
+	
+	
+	
+		.video_background{
+			width:100%;
+			height:100vh;
+			position:fixed;
+		}
+	
+	
+		
+		.fluid-video {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		pointer-events: none;
+		position: fixed;
+		top: 0;
+		left: 0; 
+		// -moz-transform: scaleX(-1);
+			//     -o-transform: scaleX(-1);
+			//     -webkit-transform: scaleX(-1);
+			//     transform: scaleX(-1);
+			//     filter: FlipH;
+			//     -ms-filter: "FlipH";
+		}
+	
+	.video_overlay{
+			position:fixed;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,d81900+100 */
+			background: #1e5799; /* Old browsers */
+			background: -moz-linear-gradient(45deg, #1e5799 0%, #d81900 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(45deg, #1e5799 0%,#d81900 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(45deg, #1e5799 0%,#d81900 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#d81900',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+			
+			
+			
+			mix-blend-mode: hue;
+			height:100vh;
+			width:100vw;
+			animation: hue_shift 20s infinite;
+			opacity:.75;
+			top: 0;
+			left: 0; 
+			
+		}
+	
+	
+		@-webkit-keyframes hue_shift{
+		0%   { 
+					filter: hue-rotate(0deg);  
+				 }
+				
+		50%
+				{
+					filter: hue-rotate(180deg);
+					}
+				
+		100% { 
+				filter: hue-rotate(0deg);  
+		
+				}
+		}
+
+		
+.bg-inflate{
+    -webkit-transform:scale(1.1); /* Safari and Chrome */
+    -moz-transform:scale(1.1); /* Firefox */
+    -ms-transform:scale(1.1); /* IE 9 */
+    -o-transform:scale(1.1); /* Opera */
+     transform:scale(1.1);
+     -webkit-transition: all .75s ease-out;
+       -moz-transition: all .75s ease-out;
+       -o-transition: all .75s ease-out;
+       transition: all .75s ease-out;
+       
+}
+
+.target-body{
+   padding-top:20%;
+   background:url(http:/media.giphy.com/media/xeWd5LK7D8Rws/giphy.gif);
+   width:100%;
+   height:80vh;
+    //background:url(http:/media.giphy.com/media/pDcJDXXIBukve/giphy.gif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position:relative;
+	
+}
+
+
+.hero-container{
+	//background-blend-mode: multiply;
+	background:url(../img/streetart.jpg);
+	background-attachment: fixed;
+	height:auto;
+	width: 100%;
+	padding:1px;
+	background-size: cover;
+	position:relative;
+	height:80vh;
+	background-position:top left;
+	background-repeat:no-repeat;
+	display: inline-block;
+	padding-top:60px;
+	
+    @include respond-to(sm) {
+		height:400px;
+		background-position: 20% 16%;
+		background-size:800px;
+		background-attachment: scroll;
+		
+    }
+	
+
+}
+
+.body-of-work-hero{
+	//background-blend-mode: multiply;
+	background:url(../img/IMG_1230-opt.jpg);
+	
+	background-attachment: fixed;
+	height:auto;
+	width: 100%;
+	padding:1px;
+	background-size: cover;
+	position:relative;
+	height:80vh;
+	background-position:bottom left;
+	background-repeat:no-repeat;
+	display: inline-block;
+	padding-top:60px;
+	
+    @include respond-to(sm) {
+		height:400px;
+	    background-position: 0% 46%;
+	    background-size: 939px;
+		background-attachment: scroll;
+		
+    }
+	
+
+}
+
+.about-hero{
+	//background-blend-mode: multiply;
+	//background:url(../img/city-laptop.jpg);
+	
+	background:url(../img/backlit-opt.jpg);
+	
+	
+	background-attachment: fixed;
+	height:auto;
+	width: 100%;
+	padding:1px;
+	background-size: cover;
+	position:relative;
+	height:80vh;
+//	background-position:bottom left;
+	background-position:top center ;
+
+	background-repeat:no-repeat;
+	display: inline-block;
+	padding-top:60px;
+	
+    @include respond-to(sm) {
+		height:400px;
+	    background-position: 50% 100%;
+	    background-size: 939px;
+		background-attachment: scroll;
+		
+    }
+	
+
+}
+
+
+
+.contact-hero{
+	//background-blend-mode: multiply;
+	background:url(../img/chicago-graff.jpg);
+	background-attachment: fixed;
+	height:auto;
+	width: 100%;
+	padding:1px;
+	background-size: cover;
+	position:relative;
+	height:80vh;
+	background-position:bottom left;
+	background-repeat:no-repeat;
+	display: inline-block;
+	padding-top:60px;
+	
+    @include respond-to(sm) {
+		height:400px;
+		background-position: 20% 16%;
+		background-size:800px;
+		background-attachment: scroll;
+		
+    }
+	
+
+}
+
+
+.animation-hero{
+	//background-blend-mode: multiply;
+	background:url("https:/s3.amazonaws.com/capture-art.us/img/animation-BG.jpg");
+	background-attachment: fixed;
+	height:auto;
+	width: 100%;
+	padding:1px;
+	background-size: cover;
+	position:relative;
+	height:80vh;
+	background-position:bottom left;
+	background-repeat:no-repeat;
+	display: inline-block;
+	padding-top:60px;
+	
+    @include respond-to(sm) {
+		height:400px;
+		background-position: 20% 16%;
+		background-size:800px;
+		background-attachment: scroll;
+		
+    }
+	
+
+}
+
+.load_hover_images{
+	display:none;
+}
+
+.icon {
+	padding:10px 0;
+}
+
+
+
+
+.soco-BG{
+    background:url(../img/soco-bg.jpg);
+//    background-blend-mode: darken;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	@include respond-to(xs) {
+		background-position: 0% 100% !important;
+    }
+}
+
+.mg-BG{
+	background:url(../img/mg-bg.jpg);
+//    background-blend-mode: darken;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+@include respond-to(xs) {
+	background-position: 0% 100% !important;
+	}
+}
+
+.scc-BG{
+	background:url(../img/scc-bg.jpg);
+//    background-blend-mode: darken;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+@include respond-to(xs) {
+	background-position: 0% 100% !important;
+	}
+}
+
+.arbor-BG{
+	background:url(../img/arbor-bg.jpg);
+//    background-blend-mode: darken;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+@include respond-to(xs) {
+	background-position: 0% 100% !important;
+	}
+}
+.llumar-BG{
+	background:url(../img/llumar-bg.jpg);
+//    background-blend-mode: darken;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+@include respond-to(xs) {
+	background-position: 0% 100% !important;
+	}
+}
+
+
+.UD-BG{
+	background:url(../img/ud-bg.jpg);
+	//background-blend-mode: multiply;
+background-size: cover;
+	background-position: center ;
+background-repeat: no-repeat;
+@include respond-to(xs) {
+		background-position: 50% 100% !important;
+	}
+
+}
+
+
+.ideal-BG{
+	background:url(../img/ideal-bg.jpg);
+//    background-blend-mode: darken;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+@include respond-to(xs) {
+	background-position: 0% 100% !important;
+	}
+}
+
+.yalla-BG{
+    background:url(../img/yalla-bg.jpg);
+//    background-blend-mode: darken;
+	background-size: cover;
+    background-position: center -15px;
+	background-repeat: no-repeat;
+	@include respond-to(xs) {
+		background-position: 30% 100% !important;
+    }
+}
+
+.fusion-BG{
+    background:url(../img/fusion-bg.jpg);
+//    background-blend-mode: darken;
+	background-size: cover;
+    background-position: center -15px;
+	background-repeat: no-repeat;
+    
+	
+	@include respond-to(xs) {
+		background-position: 20% 100% !important;
+    }
+}
+
+.kg-BG{
+    background:url(../img/kg-bg.jpg);
+    //background-blend-mode: multiply;
+	background-size: cover;
+    background-position: center -15px;
+	background-repeat: no-repeat;
+	@include respond-to(xs) {
+	    background-position: 70% 100%!important;
+    }
+}
+
+.nathans-BG{
+    background:url(../img/nathans-bg.jpg);
+    //background-blend-mode: multiply;
+	background-size: cover;
+    background-position: center -15px;
+	background-repeat: no-repeat;
+	
+	@include respond-to(xs) {
+	    background-position: 70% 100% !important;
+    }
+
+}
+
+
+
+
