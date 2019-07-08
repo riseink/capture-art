@@ -61,8 +61,12 @@ body{
 	
 		.video_background{
 			width:100%;
-			height:100vh;
-			position:fixed;
+			height:calc(80vh + 1px);
+			position:absolute;
+
+			@include respond-to(sm) {
+				height:400px;
+			}
 		}
 	
 	
@@ -72,7 +76,7 @@ body{
 		height: 100%;
 		object-fit: cover;
 		pointer-events: none;
-		position: fixed;
+		position: absolute;
 		top: 0;
 		left: 0; 
 		// -moz-transform: scaleX(-1);
@@ -84,7 +88,7 @@ body{
 		}
 	
 	.video_overlay{
-			position:fixed;
+			position:absolute;
 			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,d81900+100 */
 			background: #1e5799; /* Old browsers */
 			background: -moz-linear-gradient(45deg, #1e5799 0%, #d81900 100%); /* FF3.6-15 */
@@ -95,14 +99,19 @@ body{
 			
 			
 			mix-blend-mode: hue;
-			height:100vh;
-			width:100vw;
+			height:calc(80vh + 1px);
+			width:100%;
 			animation: hue_shift 20s infinite;
 			opacity:.75;
 			top: 0;
 			left: 0; 
+
+			@include respond-to(sm) {
+				height:400px;
+			}
 			
 		}
+
 	
 	
 		@-webkit-keyframes hue_shift{
@@ -150,7 +159,7 @@ body{
 
 .hero-container{
 	//background-blend-mode: multiply;
-	background:url(../img/streetart.jpg);
+	// background:url(../img/streetart.jpg);
 	background-attachment: fixed;
 	height:auto;
 	width: 100%;
@@ -176,7 +185,7 @@ body{
 
 .body-of-work-hero{
 	//background-blend-mode: multiply;
-	background:url(../img/IMG_1230-opt.jpg);
+	background:url(../img/inter.gif);
 	
 	background-attachment: fixed;
 	height:auto;

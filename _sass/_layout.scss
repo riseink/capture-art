@@ -105,12 +105,13 @@
 
 .half-flex {
     @include col(1/2);
-	flex:1;
+  flex:1;
+  box-sizing: border-box;
 	//text-align:justify;
 	padding:75px 50px ;
   @include respond-to(sm) {
   	@include span(1/1);
-	padding:0px;
+	padding:20px;
   }
 }
 
@@ -122,15 +123,7 @@
   		padding:0px;
     }
 }
-.half-flex:nth-child(2){
-	
-	padding:75px 50px 75px 0!important;
-	
-    @include respond-to(sm) {
-    	margin-top:20px;
-		padding-bottom:40px;
-    }
-}
+
 
 .quarter-tiles{
     width:25%;

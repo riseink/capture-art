@@ -1,15 +1,8 @@
-//=require vendor/jquery
-//=require vendor/hover_intent
-//=require vendor/jquery.parallax-scroll
-//=require vendor/demo.min
-//=require vendor/menu
-//=require vendor/jquery.magnific-popup.min
-//=require vendor/modernizr-custom
-
 var app = {
 
+
+
     initialize: function(){
-		// this.checkForChrome();
 		this.checkForAdblock();
 		this.toggleBounce();
         this.hamburgerAnimation();
@@ -18,54 +11,9 @@ var app = {
         this.initializeHorizontalBanners();
 		this.initalizeMaginificPopup();
 		this.initalizeExpandingContent();
-		this.initializeMap();
-        this.initializeScrollingeffects();
         
     },
 	
-	checkForChrome: function(){
-		   // Opera 8.0+
-		var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
-		    // Firefox 1.0+
-		var isFirefox = typeof InstallTrigger !== 'undefined';
-		    // At least Safari 3+: "[object HTMLElementConstructor]"
-			// old safari checker(9.0)
-			// var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0; 
-		var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0 || !isChrome && !isOpera && window.webkitAudioContext !== undefined;
-		
-		
-		var ua = navigator.userAgent.toLowerCase();
-		var isAndroid = ua.indexOf("android") > -1;
-
-		
-		
-		    // Internet Explorer 6-11
-		var isIE = /*@cc_on!@*/false || !!document.documentMode;
-		    // Edge 20+
-		var isEdge = !isIE && !!window.StyleMedia;
-		    // Chrome 1+
-		var isChrome = !!window.chrome && !!window.chrome.webstore;
-		    // Blink engine detection
-		var isBlink = (isChrome || isOpera) && !!window.CSS;
-		
-			if (isChrome == true || isSafari == true || isAndroid == true || isFirefox == true) {
-				// console.log('safari chrome detected')
-			}
-
-			 else {
-				alert("Thanks for checking out my site. I strive for cutting edge design, some features are experimental and specific only to the -webkit package, thus my CSS fallbacks have been dumbed down in IE. FOR BEST VIEWING EXPERINCE SWITCH TO GOOGLE CHROME, SAFARI or FIREFOX.  Cheers.");
-				//Browser Specific Fallbacks
-				$('.polygon-fill').addClass('fallback');
-				$('.polygon-fill-right').addClass('fallback');
-				$('#map').hide();
-
-
-			}
-				
-
-	
-	
-	},
 	
 	checkForAdblock: function(){
 		if( window.canRunAds === undefined && $('#targetAnimations').length > 0){
@@ -80,20 +28,14 @@ var app = {
 	
 	toggleBounce: function(){
 		
-    	var $checkForBounce = $('.scroll-indicator');
-	
-        if ( $checkForBounce.length){
-			
+    	var checkForBounce = $('.scroll-indicator');
+        if (checkForBounce){
 		    setTimeout(function(){
 		        $(".scroll-indicator").toggleClass("bounce");
 				$('.target_color_bounce').toggleClass("color_bounced");
 		    }, 1000);
                
         }
-		
-		else{
-			return false;
-		}
 	
 	},
 
@@ -285,130 +227,9 @@ var app = {
 		
 	},
 
-	initializeMap: function(){
-		if ($('#map').length > 0) {
-			var citymap = {
-			  chicago_city_1: {
-			    center: {lat: 41.878, lng: -87.629},
-			    likely_diameter: 2,
-				color: "#40dfff",
-				opacity:.4
-			  },
-			  chicago_city_2: {
-			    center: {lat: 41.878, lng: -87.629},
-			    likely_diameter: .6,
-				color: "#70e7ff",
-				opacity:.3
-	  
-	  
-			  },
-			  chicago_city_3: {
-			    center: {lat: 41.878, lng: -87.629},
-			    likely_diameter: .4,
-				color: "#9fedfd",
-				opacity:.2
-	  
-	  
-			  },
-			  chicago_city_4: {
-			    center: {lat: 41.878, lng: -87.629},
-			    likely_diameter: .2,
-				color: "#cef4fc",
-				opacity:.1
-	  
-	  
-	  
-			  }
 
-			  
-			};
-						
-
-
-
-			window.initMap = function(){
-			  // Create the map.
-			  var myLatLng = {lat: 41.868, lng: -87.629};
-			  
-			  var map = new google.maps.Map(document.getElementById('map'), {
-			    zoom: 12,
-   			   scrollwheel: false,
-			    center: {lat: 41.8819888, lng: -87.6791893},
-			    mapTypeId: google.maps.MapTypeId.SATILITE,
-				styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}] 
-			  });
-			
-			var image = 'img/clear-icon.png';
-			  
-  		    var marker = new google.maps.Marker({
-  		      position: myLatLng,
-  		      map: map,
-  		      title: 'Hello World!',
-    		  icon: image
-				
-				
-  		    });
-			  
-
-			  // Construct the circle for each value in citymap.
-			  // Note: We scale the area of the circle based on the population.
-			  for (var city in citymap) {
-			    // Add the circle for this city to the map.
-			    var cityCircle = new google.maps.Circle({
-			      strokeColor: citymap[city].color,
-			      strokeOpacity: 0.8,
-			      strokeWeight: 2,
-			      fillColor: citymap[city].color,
-				  fillOpacity: citymap[city].opacity,
-			      map: map,
-			      center: citymap[city].center,
-			      radius: 1/(citymap[city].likely_diameter) * 10000
-			    });
-			  }
-			}
-		}
-		
-		else{
-			
-		}	
-	},
-	
-    initializeScrollingeffects: function(){
-
-	    // var timer, el = $('body'),
-	    //     flag = false;
-	    // $(window).scroll(function() {
-	    //     if (!flag) {
-	    //         flag = true;
-	    //         $('.targetScroll').addClass('scrolling');
-	    //         $('.targetScrollText').addClass('scrolling');
-	    //         $('.targetScrollImage').addClass('scrollingImage');
-	    //
-	    //
-	    //         $('.header').addClass('sticky');
-	    //         //$('.logo-container img').addClass('sticky');
-	    //         $('.hamburger-container').addClass('sticky');
-	    //
-	    //
-	    //     }
-	    //     clearTimeout(timer);
-	    //     timer = setTimeout(function() {
-	    //         $('.targetScroll').removeClass('scrolling');
-	    //         $('.targetScrollText').removeClass('scrolling');
-	    //         $('.targetScrollImage').removeClass('scrollingImage');
-	    //
-	    //
-	    //
-	    //         flag = false;
-	    //     }, 200);
-	    // });
-
-    },
 
     
 };
 
-$(document).ready(function(){
-    app.initialize();
-	console.log("Like what you see?  Let's get in touch.")
-});
+app.initialize();

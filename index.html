@@ -15,14 +15,45 @@ meta_description: Seth Epstein is a Chicago Based Developer, who has worked on a
 				 <source src="https://scc-tools.s3.amazonaws.com/seths_code_bodega/bg.mp4" type="video/mp4">
 			 </video>
 			 <div class="video_overlay"></div>
-
 			 <div class="intro-copy">
-					<h1>I am a Chicago based Developer, who has worked with a variety
-				of clients, on projects running the full spectrum of Digital Services.</h1>
-				</div>
+				<h1 id="typewriter"></h1>
+			</div>
+			 <script>
+				 var app = document.getElementById('typewriter');
+
+				  var typewriter = new Typewriter(app, {
+				    loop: false,
+				    delay: 75,
+				  });
+				  
+				  typewriter
+				    .pauseFor(500)
+				    .typeString('Welcome to my site! ')
+					.pauseFor(250)
+					.typeString(' I am a Chicago based Front End D')
+					.deleteChars(5)
+					.typeString(' <strong><span class="amp-font">+</span></strong> Back End Dev')
+					.changeDeleteSpeed(5)
+					.deleteChars(22)
+				    .typeString('<strong><span style="color: #FFC23B;">Full Stack</span></strong> Developer. ')
+					.pauseFor(250)
+					.typeString(' I love making websites')
+					.changeDeleteSpeed('natural')
+					.deleteChars(8)
+					.typeString('awesome websites')
+					.deleteChars(16)
+					.typeString(' websites <strong><span style="color: #FFC23B;">awesome</span></strong>')
+					.pauseFor(250)
+					.typeString('.  ')
+
+				    .start();
+
+					
+			 </script>
+
 				
 		 </div>
-		 
+		 <div class="scroll-indicator "><p><i class="fa fa-chevron-down target_color_bounce"></i></p></div>
 
 
 		</div><!-- video_background -->
@@ -31,14 +62,16 @@ meta_description: Seth Epstein is a Chicago Based Developer, who has worked on a
 
 	
 	</div><!-- video_background -->
-	<div class="scroll-indicator "><p><i class="fa fa-chevron-down target_color_bounce"></i></p></div>
+
 	
 </div>
 
 	<a class="offset_anchor" id="body_of_work"></a>
    
    <div class="headline-container targetScroll">
-       <h1 class="headline">Currently in Production</h1>
+	   <!-- <h1 class="headline">Currently in Production</h1> -->
+	   <h1 class="headline">Current</h1>
+
    </div>
    
 	   
@@ -185,7 +218,6 @@ meta_description: Seth Epstein is a Chicago Based Developer, who has worked on a
 				 <div class="work-title color-primary targetScrollText">Kerrygold</div>
 					<div class="polygon-wrap kg-BG">
 						<div class="polygon-fill banner-left "></div>
-					<img src="/img/slider-inflate.png" class="img-responsive">
 					<div class="tap-container">
 						TAP
 					</div>
@@ -202,7 +234,6 @@ meta_description: Seth Epstein is a Chicago Based Developer, who has worked on a
 				<div class="work-title color-primary targetScrollText">Fusion Academy</div>
 					<div class="polygon-wrap fusion-BG">
 						<div class="polygon-fill-right banner-right"></div>
-					<img src="/img/slider-inflate.png" class="img-responsive">
 					<div class="tap-container">
 						TAP
 					</div>
@@ -222,7 +253,6 @@ meta_description: Seth Epstein is a Chicago Based Developer, who has worked on a
 				 <div class="work-title color-primary targetScrollText">Nathans Famous</div>
 					 <div class="polygon-wrap nathans-BG">
 						 <div class="polygon-fill banner-left"></div>
-					 <img src="/img/slider-inflate.png" class="img-responsive">
 					<div class="tap-container">
 						TAP
 					</div>
@@ -242,7 +272,6 @@ meta_description: Seth Epstein is a Chicago Based Developer, who has worked on a
 				 <div class="work-title color-primary targetScrollText">Yalla Mediterainian</div>
 					 <div class="polygon-wrap yalla-BG">
 						 <div class="polygon-fill-right banner-right"></div>
-					 <img src="/img/slider-inflate.png" class="img-responsive">
 					<div class="tap-container">
 						TAP
 					</div>
@@ -259,36 +288,21 @@ meta_description: Seth Epstein is a Chicago Based Developer, who has worked on a
 		
 				 
 		
-			<div class="work-title color-primary targetScrollText">Winona Capital</div>
-				 <div class="polygon-wrap winona-BG">
-					 <div class="polygon-fill-left banner-left"></div>
-				<img src="/img/slider-inflate.png" class="img-responsive">
-				<div class="tap-container">
-					TAP
-				</div>
-					 <div class="content-right content-slider">
-					<h3><strong>Build -</strong> Front End  <br>
-						<strong>Tech Stack -</strong> Jekyll<span class="amp-font">&</span> Jeet </h3>
-					<p><strong>Challenge: </strong>Create fully responsive front end with customized UI behavior </p>
-						 <a href="http://winonacapital.com/" target="_blank" class="targetScrollText" >www.winonacapital.com</a>
-					
-					 </div>
-				 </div>
+
 			
 			
 			
 			
 			
 			
-				 </div>
+</div>
 
 	<div class="work-title color-primary ">&nbsp;</div>
 	
 
 
    
-   <div class="body-of-work-hero targetScrollImage">
-	</div>
+   <div class="body-of-work-hero targetScrollImage"></div>
 	
 	
 	<a class="offset_anchor" id="tech_stack"></a>
@@ -330,14 +344,14 @@ meta_description: Seth Epstein is a Chicago Based Developer, who has worked on a
 	
 	      <div class="tech-stack-items">
 		  
-	        <a itemprop="url" class="quarters" target="_blank" href="https://js.org/"><img class ="img-responsive" src="/img/javascript-js-seeklogo.com.svg"><p>Javascript</p></a>
-	        <a itemprop="url" class="quarters" target="_blank" href="https://www.npmjs.com/"><img class ="img-responsive" src="/img/npm-node-package-manager.svg"><p>Node Package Manager</p></a>
-	        <a itemprop="url" class="quarters" target="_blank" href="http://rubyonrails.org/"><img class ="img-responsive" src="/img/Ruby_On_Rails_Logo.svg"><p>Ruby on Rails</p></a>
-	        <a itemprop="url" class="quarters" target="_blank" href="https://redux.js.org/"><img class ="img-responsive" src="/img/redux-seeklogo.com.svg"><p>Redux</p></a>
-	        <a itemprop="url" class="quarters" target="_blank" href="https://wagtail.io/"><img class ="img-responsive" src="/img/wagtail-seeklogo.com.svg"><p>Wagtail CMS</p></a>
-	        <a itemprop="url" class="quarters" target="_blank" href="https://magento.com/"><img class ="img-responsive" src="/img/Magento.svg"><p>Magento Ecommerce</p></a>
-	        <a itemprop="url" class="quarters" target="_blank" href="https://middlemanapp.com/"><img class ="img-responsive" src="/img/middleman-logo.svg"><p>Middleman</p></a>
-	        <a itemprop="url" class="quarters" target="_blank" href="http://www.adobe.com/marketing-cloud/experience-manager.html"><img class ="img-responsive" src="/img/AEM_logo_RGB.svg"><p>Adobe Experience Manager</p></a>
+	        <a itemprop="url" class="quarters" target="_blank" href="https://js.org/"><img class ="img-responsive" src="/assets/img/javascript-js-seeklogo.com.svg"><p>Javascript</p></a>
+	        <a itemprop="url" class="quarters" target="_blank" href="https://www.npmjs.com/"><img class ="img-responsive" src="/assets/img/npm-node-package-manager.svg"><p>Node Package Manager</p></a>
+	        <a itemprop="url" class="quarters" target="_blank" href="http://rubyonrails.org/"><img class ="img-responsive" src="/assets/img/Ruby_On_Rails_Logo.svg"><p>Ruby on Rails</p></a>
+	        <a itemprop="url" class="quarters" target="_blank" href="https://redux.js.org/"><img class ="img-responsive" src="/assets/img/redux-seeklogo.com.svg"><p>Redux</p></a>
+	        <a itemprop="url" class="quarters" target="_blank" href="https://wagtail.io/"><img class ="img-responsive" src="/assets/img/wagtail-seeklogo.com.svg"><p>Wagtail CMS</p></a>
+	        <a itemprop="url" class="quarters" target="_blank" href="https://magento.com/"><img class ="img-responsive" src="/assets/img/Magento.svg"><p>Magento Ecommerce</p></a>
+	        <a itemprop="url" class="quarters" target="_blank" href="https://middlemanapp.com/"><img class ="img-responsive" src="/assets/img/middleman-logo.svg"><p>Middleman</p></a>
+	        <a itemprop="url" class="quarters" target="_blank" href="http://www.adobe.com/marketing-cloud/experience-manager.html"><img class ="img-responsive" src="/assets/img/AEM_logo_RGB.svg"><p>Adobe Experience Manager</p></a>
 			
 	       </div><!-- tech-stack-items -->
 		
@@ -353,8 +367,21 @@ meta_description: Seth Epstein is a Chicago Based Developer, who has worked on a
 	    <h1 class="headline">Chicago Based Web Development</h1>
 	</div>
 	
-    <div id="map" class=""></div>
+    <div id="map"></div>
+<script>
+	 function initializeMap(){
 
+		var map = new google.maps.Map(document.getElementById('map'), {
+			    zoom: 12,
+   			   scrollwheel: false,
+			    center: {lat: 41.8819888, lng: -87.6791893},
+			    mapTypeId: google.maps.MapTypeId.SATILITE,
+				styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}] 
+			  });
+		 
+	 }
+
+</script>
 
 	<div class="wrapper">
 		<div class="mail-chimp-embed-container">
@@ -373,4 +400,4 @@ meta_description: Seth Epstein is a Chicago Based Developer, who has worked on a
 		</div>
 	</div>
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtztkFo9qs9eE9jKqmkldpxLz9dt6-e30&signed_in=true&callback=initMap"></script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtztkFo9qs9eE9jKqmkldpxLz9dt6-e30&signed_in=true&callback=initializeMap"></script>
