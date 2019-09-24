@@ -2,11 +2,7 @@
     color:$color-light-gray;
     transition:all .5s;
 	font-family:$font-light;
-	letter-spacing:1px;
-	
-
-	
-
+	letter-spacing:1px;	
 	
 	a {
 	    color:$color-1;
@@ -16,6 +12,8 @@
 		@include respond-to(sm) {
 		    font-size: 16px;
 			line-height:23px;
+			font-weight: 700;
+
 		}
 		
 	}
@@ -27,40 +25,30 @@
 	h1{
 	 	font-family:$font-primary;
 		
-		
 	}
 	
 	h3{
-		
 		font-family:$font-light;
 		text-transform:uppercase;
 	    color:$color-light-gray;
-		
-		
-		
+
 		strong{
 		    color:$color-3;
-			
-			
 		}
-		
-		
 	}
 	
 	p{
 		margin:20px 0;
 		font-size:20px;
-		
 		@include respond-to(sm) {
 		    font-size: 16px;
 			line-height:23px;
-			
+			font-weight: 700;
 		}
 		
 		strong{
 		    color:$color-3;
 			text-transform:uppercase;
-			
 			
 		}
 		
